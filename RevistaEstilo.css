@@ -5,11 +5,12 @@
 
 body{
 	background-color: F5F5F5;
+	overflow-x: hidden;
 }
 
 main{
-	margin: 0 10px;
-	width: 70%;
+	width: 100%;
+	margin: 20px;
 }
 
 p{
@@ -54,6 +55,7 @@ h1, h2, h3{
 }
 
 .foco-escopo{
+	width: 60%;
 	padding: 1.5rem;
 	background: #fff;
 	border: 1px solid #dce5dc;
@@ -62,6 +64,7 @@ h1, h2, h3{
 }
 
 .projetos{
+	width: 60%;
 	margin: 15px 0;
 	padding: 1.5rem;
 	background: #fff;
@@ -100,7 +103,39 @@ h1, h2, h3{
 	text-decoration: underline;
 }
 
+#conteudo{
+	height: auto;
+	width: 100%;
+}
+
+#colouna-esquerda{
+	float: left;
+	width: 70%;
+}
+
+#artigo-revisao{
+	width: 60%;
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid #dce5dc;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#financiamento{
+	width: 60%;
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid #dce5dc;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 aside{
-	width: 20%;
 	float: right;
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid #dce5dc;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
