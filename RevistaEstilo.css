@@ -15,7 +15,8 @@ main{
 }
 
 p{
-	color:#2E8B57;
+	font-size: 18px;
+	color:#4F4F4F;
 }
 
 header{
@@ -55,8 +56,16 @@ h1, h2, h3{
 	color: #006400;
 }
 
+#coluna-esquerda{
+	width: 70%;
+	padding: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
 .foco-escopo{
-	width: 90%;
+	width: 100%;
 	padding: 1.5rem;
 	background: #fff;
 	border: 1px solid #dce5dc;
@@ -65,7 +74,7 @@ h1, h2, h3{
 }
 
 .projetos{
-	max-width: 45%;
+	max-width: 100%;
 	flex: 1 1 300px;
 	margin: 15px 0;
 	padding: 1.5rem;
@@ -80,7 +89,7 @@ h1, h2, h3{
 	border: 1px;
 	border-radius: 20px;
 	color: #006400;
-	background-color: #FFFACD;
+	background-color: #66CDAA;
 }
 
 #artigo-revisao .artigos{
@@ -96,16 +105,8 @@ h1, h2, h3{
 	text-decoration: underline;
 }
 
-#coluna-esquerda{
-	width: 70%;
-	padding: 1.5rem;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-}
-
 #artigo-revisao{
-	width: 50%;
+	width: 100%;
 	padding: 1.5rem;
 	background: #fff;
 	border: 1px solid #dce5dc;
@@ -114,7 +115,7 @@ h1, h2, h3{
 }
 
 #financiamento{
-	width: 50%;
+	width: 100%;
 	padding: 1.5rem;
 	background: #fff;
 	border: 1px solid #dce5dc;
@@ -124,7 +125,14 @@ h1, h2, h3{
 
 aside{
 	width: 30%;
-	height: 300px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.conteudo-direita{
+	width: 100%;
 	padding: 1.5rem;
 	background: #fff;
 	border: 1px solid #dce5dc;
@@ -132,8 +140,22 @@ aside{
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.conteudo-direita p{
+	display: flex;
+	justify-content: space-between;
+}
+
+.conteudo-direita p span{
+	margin-bottom: 8px;
+	padding: 2px 4px;
+	border: 1px;
+	border-radius: 20px;
+	color: #006400;
+	background-color: #66CDAA;
+}
+
 @media (max-width: 768px) {
-	#nav-topo ul li {
+	#nav-topo ul li{
 		float: none;
 		width: 100%;
 		text-align: center;
