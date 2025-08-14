@@ -59,9 +59,9 @@ h1, h2, h3{
 #coluna-esquerda{
 	width: 70%;
 	padding: 1.5rem;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	/* gap: 10px; */
 }
 
 .foco-escopo{
@@ -73,8 +73,15 @@ h1, h2, h3{
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.container-projetos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+}
+
 .projetos{
-	max-width: 100%;
+	max-width: 48%;
 	flex: 1 1 300px;
 	margin: 15px 0;
 	padding: 1.5rem;
@@ -88,6 +95,14 @@ h1, h2, h3{
 	padding: 2px 4px;
 	border: 1px;
 	border-radius: 20px;
+	color: #006400;
+	background-color: #66CDAA;
+}
+
+.projetos .equipes{
+	padding: 2px 4px;
+	border: 1px;
+	border-radius: 5px;
 	color: #006400;
 	background-color: #66CDAA;
 }
