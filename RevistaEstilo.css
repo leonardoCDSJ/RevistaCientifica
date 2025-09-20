@@ -73,6 +73,10 @@ h1, h2, h3{
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.foco-escopo a{
+	color: #D0312D;
+}
+
 .container-projetos {
 	display: flex;
 	flex-wrap: wrap;
@@ -112,7 +116,7 @@ h1, h2, h3{
 }
 
 #artigo-revisao .artigos .titulo-link a{
-	color: #006400;
+	color: #D0312D;
 	text-decoration: none;
 }
 
