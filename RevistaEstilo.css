@@ -20,11 +20,13 @@ p{
 }
 
 header{
-	border-top: 35px solid #228B22;
+	border-top: 35px solid transparent;
+	border-image: linear-gradient(to right, #228B22, #DC143C);
+	border-image-slice: 1;
 }
 
 #nav-topo{
-	background-color: #228B22;
+	background: linear-gradient(to right, #228B22, #DC143C);
 	overflow: hidden;
 }
 
@@ -45,6 +47,10 @@ header{
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+
+.active{
+	background-color: #006400;
 }
 
 #nav-topo ul li a:hover{
@@ -99,29 +105,17 @@ h1, h2, h3{
 	padding: 2px 4px;
 	border: 1px;
 	border-radius: 20px;
-	color: #006400;
-	background-color: #66CDAA;
+	color: #fff;
+	background: linear-gradient(to right, #228B22, #DC143C);
+	/* background-color: #66CDAA; */
 }
 
 .projetos .equipes{
 	padding: 2px 4px;
 	border: 1px;
 	border-radius: 5px;
-	color: #006400;
+	color: #fff;
 	background-color: #66CDAA;
-}
-
-#artigo-revisao .artigos{
-	margin: 15px 0;
-}
-
-#artigo-revisao .artigos .titulo-link a{
-	color: #D0312D;
-	text-decoration: none;
-}
-
-#artigo-revisao .artigos .titulo-link a:hover{
-	text-decoration: underline;
 }
 
 #artigo-revisao{
@@ -131,6 +125,30 @@ h1, h2, h3{
 	border: 1px solid #dce5dc;
 	border-radius: 5px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#artigo-revisao .artigos{
+	margin: 15px 0;
+}
+
+#artigo-revisao .artigos a{
+	color: #D0312D;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+#artigo-revisao .artigos a:hover{
+	text-decoration: underline;
+}
+
+#artigo-revisao .artigos .titulo-link a{
+	color: #D0312D;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+#artigo-revisao .artigos .titulo-link a:hover{
+	text-decoration: underline;
 }
 
 #financiamento{
@@ -169,8 +187,8 @@ aside{
 	padding: 2px 4px;
 	border: 1px;
 	border-radius: 20px;
-	color: #006400;
-	background-color: #66CDAA;
+	color: #fff;
+	background: linear-gradient(to right, #228B22, #DC143C);
 }
 
 @media (max-width: 768px) {
