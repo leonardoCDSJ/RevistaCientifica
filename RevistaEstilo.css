@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: #F5F5F5;
+	background-color:  #F4F4F4;
 	overflow-x: hidden;
 }
 
@@ -20,13 +20,13 @@ p{
 }
 
 header{
-	border-top: 35px solid transparent;
-	border-image: linear-gradient(to right, #228B22, #DC143C);
+	border-top: 35px solid #1a6b4f;
+	/* border-image: linear-gradient(to right, #1F7A1F, #2DA02D); */
 	border-image-slice: 1;
 }
 
 #nav-topo{
-	background: linear-gradient(to right, #228B22, #DC143C);
+	background: #1a6b4f/*linear-gradient(to right, #1F7A1F, #2DA02D)*/;
 	overflow: hidden;
 }
 
@@ -50,16 +50,16 @@ header{
 }
 
 .active{
-	background-color: #006400;
+	background-color: #004f2a;
 }
 
 #nav-topo ul li a:hover{
-	background-color: #006400;
+	background-color: #004f2a;
 	transition: 0.3s;
 }
 
 h1, h2, h3{
-	color: #006400;
+	color:  #006837;
 }
 
 #coluna-esquerda{
@@ -96,26 +96,26 @@ h1, h2, h3{
 	margin: 15px 0;
 	padding: 1.5rem;
 	background: #fff;
-	border: 1px solid #dce5dc;
+	border: 1px solid #e6e6e6;
 	border-radius: 5px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 
 .projetos span{
 	padding: 2px 4px;
 	border: 1px;
 	border-radius: 20px;
 	color: #fff;
-	background: linear-gradient(to right, #228B22, #DC143C);
-	/* background-color: #66CDAA; */
+	background: #E85A3F;
 }
 
 .projetos .equipes{
 	padding: 2px 4px;
 	border: 1px;
-	border-radius: 5px;
+	border-radius: 20px;
 	color: #fff;
-	background-color: #66CDAA;
+	background-color: #28A745;
 }
 
 #artigo-revisao{
@@ -132,7 +132,7 @@ h1, h2, h3{
 }
 
 #artigo-revisao .artigos a{
-	color: #D0312D;
+	color: #C1272D;
 	text-decoration: none;
 	font-size: 1rem;
 }
@@ -144,7 +144,7 @@ h1, h2, h3{
 #artigo-revisao .artigos .titulo-link a{
 	color: #D0312D;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 #artigo-revisao .artigos .titulo-link a:hover{
@@ -184,11 +184,10 @@ aside{
 
 .conteudo-direita p span{
 	margin-bottom: 8px;
-	padding: 2px 4px;
-	border: 1px;
+	padding: 2px 8px;
+	border: 1px solid #E85A3F;
 	border-radius: 20px;
-	color: #fff;
-	background: linear-gradient(to right, #228B22, #DC143C);
+	color: #E85A3F;
 }
 
 @media (max-width: 768px) {
