@@ -9,8 +9,13 @@ body{
 	overflow-x: hidden;
 }
 
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
 main{
 	display: flex;
+	flex-wrap: wrap;
 	gap: 20px;
 }
 
@@ -21,12 +26,16 @@ p{
 
 header{
 	border-top: 35px solid #1a6b4f;
-	/* border-image: linear-gradient(to right, #1F7A1F, #2DA02D); */
 	border-image-slice: 1;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 #nav-topo{
-	background: #1a6b4f/*linear-gradient(to right, #1F7A1F, #2DA02D)*/;
+	background: #1a6b4f;
 	overflow: hidden;
 }
 
@@ -65,9 +74,6 @@ h1, h2, h3{
 #coluna-esquerda{
 	width: 70%;
 	padding: 1.5rem;
-	/* display: flex; */
-	/* flex-wrap: wrap; */
-	/* gap: 10px; */
 }
 
 .foco-escopo{
@@ -190,16 +196,72 @@ aside{
 	color: #E85A3F;
 }
 
-@media (max-width: 768px) {
-	#nav-topo ul li{
-		float: none;
+/* TABLET */
+@media (max-width: 1024px) {
+
+	#coluna-esquerda {
 		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.conteudo-direita {
+		width: 48%;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+	header {
 		text-align: center;
 	}
 
-	.foco-escopo, 
-	#artigo-revisao, 
-	#financiamento {
+	#nav-topo ul li {
+		float: none;
+	}
+
+	#nav-topo ul li a {
+		padding: 12px;
+		border-top: 1px solid rgba(255,255,255,0.2);
+	}
+
+	main {
+		flex-direction: column;
+	}
+
+	#coluna-esquerda,
+	aside {
+		width: 100%;
+		padding: 1rem;
+	}
+
+	.container-projetos {
+		flex-direction: column;
+	}
+
+	.projetos {
+		max-width: 100%;
+	}
+
+	.conteudo-direita {
 		width: 100%;
 	}
+
+	p {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1025px) {
+
+	main {
+		flex-wrap: nowrap;
+	}
+
+	
 }
