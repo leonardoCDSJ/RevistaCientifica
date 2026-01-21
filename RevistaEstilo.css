@@ -34,6 +34,18 @@ img{
 	height: auto;
 }
 
+
+#menu{
+	display: none;
+	background: #1a6b4f;
+	color: #fff;
+	border: none;
+	font-size: 28px;
+	padding: 10px 16px;
+	cursor: pointer;
+	width: 100%;
+}
+
 #nav-topo{
 	background: #1a6b4f;
 	overflow: hidden;
@@ -220,6 +232,18 @@ aside{
 	header {
 		text-align: center;
 	}
+	
+	#menu{
+		display: block;
+	}
+	
+	#nav-topo{
+		display: none;
+	}
+	
+	#nav-topo.open{
+		display: block;
+	}
 
 	#nav-topo ul li {
 		float: none;
@@ -257,6 +281,7 @@ aside{
 	}
 }
 
+/*PADRÃO*/
 @media (min-width: 1025px) {
 
 	main {
