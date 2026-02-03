@@ -136,7 +136,7 @@ h1, h2, h3{
 	background-color: #28A745;
 }
 
-#artigo-revisao{
+.artigo-revisao{
 	width: 100%;
 	padding: 1.5rem;
 	background: #fff;
@@ -145,27 +145,27 @@ h1, h2, h3{
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#artigo-revisao .artigos{
+.artigo-revisao .artigos{
 	margin: 15px 0;
 }
 
-#artigo-revisao .artigos a{
+.artigo-revisao .artigos a{
 	color: #C1272D;
 	text-decoration: none;
 	font-size: 1rem;
 }
 
-#artigo-revisao .artigos a:hover{
+.artigo-revisao .artigos a:hover{
 	text-decoration: underline;
 }
 
-#artigo-revisao .artigos .titulo-link a{
+.artigo-revisao .artigos .titulo-link a{
 	color: #D0312D;
 	text-decoration: none;
 	font-size: 1.3rem;
 }
 
-#artigo-revisao .artigos .titulo-link a:hover{
+.artigo-revisao .artigos .titulo-link a:hover{
 	text-decoration: underline;
 }
 

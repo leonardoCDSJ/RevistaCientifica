@@ -8,12 +8,14 @@
 	<title>Acervo - Revista Científica IF</title>
 	<link rel="stylesheet" href="css/RevistaEstilo.css">
 	<script src="js/menu.js" defer></script>
+	<script src="js/edicoes.js" defer></script>
+	<script src="js/estatisticas.js" defer></script>
 </head>
 
 <body>
 	<header>
 		<div>
-			<img src="img/LogoIF.png" height="150px">
+			<img src="img/LogoIF.png" alt="Logo do IF Baiano" height="150px">
 		</div>
 		
 		<button id="menu" aria-label="Abrir menu">☰</button>
@@ -37,62 +39,16 @@
 				<br>
 
 				<div class="foco-escopo">
-					<p>Bem-vindo ao acervo da <strong>Revista Científica IF Baiano</strong>. Aqui você pode acessar todas as edições anteriores organizadas por volume e número, com links para os artigos publicados.</p>
+					<p>Bem-vindo ao acervo da <strong>Revista Científica IF Baiano</strong>.
+					As edições estão organizadas por volume e número</p>
 				</div>
 
 				<br>
 
-				<div id="artigo-revisao">
-					<h2>Volume 6 (2025)</h2>
-
-					<div class="artigos">
-						<p><strong>Vol. 6, Nº 3</strong> - Setembro a Novembro</p>
-						<a href="EdicaoAtual.html">[ Acessar Edição ]</a>
+				<div class="artigo-revisao">
+					<div id="lista-edicoes">
+						<!-- As edições serão inseridas aqui-->
 					</div>
-
-					<div class="artigos">
-						<p><strong>Vol. 6, Nº 2</strong> - Junho a Agosto</p>
-						<a href="#">[ Ver PDF / Edição Completa ]</a>
-					</div>
-
-					<div class="artigos">
-						<p><strong>Vol. 6, Nº 1</strong> - Março a Maio</p>
-						<a href="#">[ Ver PDF / Edição Completa ]</a>
-					</div>
-				</div>
-
-				<br>
-
-				<div id="artigo-revisao">
-					<h2>Volume 5 (2024)</h2>
-
-					<div class="artigos">
-						<p><strong>Vol. 5, Nº 3</strong> - Setembro a Novembro</p>
-						<a href="#">[ Ver PDF / Edição Completa ]</a>
-					</div>
-
-					<div class="artigos">
-						<p><strong>Vol. 5, Nº 2</strong> - Junho a Agosto</p>
-						<a href="#">[ Ver PDF / Edição Completa ]</a>
-					</div>
-
-					<div class="artigos">
-						<p><strong>Vol. 5, Nº 1</strong> - Março a Maio</p>
-						<a href="#">[ Ver PDF / Edição Completa ]</a>
-					</div>
-				</div>
-
-				<br>
-
-				<div id="artigo-revisao">
-					<h2>Volumes Anteriores (2019–2023)</h2>
-
-					<ul>
-						<li><a href="#">Volume 4 (2023)</a></li>
-						<li><a href="#">Volume 3 (2022)</a></li>
-						<li><a href="#">Volume 2 (2021)</a></li>
-						<li><a href="#">Volume 1 (2020)</a></li>
-					</ul>
 				</div>
 			</section>
 		</div>
@@ -118,22 +74,17 @@
 			<div class="conteudo-direita">
 				<h3>Estatísticas</h3>
 				<br>
-				<p>Artigos publicados: <span>127</span></p>
-				<p>Edições publicadas: <span>24</span></p>
-				<p>Downloads totais: <span>15.3k</span></p>
+				<p>Artigos publicados: <span id="total-artigos">-</span></p>
+				<p>Edições publicadas: <span id="total-edicoes">-</span></p>
+				<p>Downloads totais: <span id="total-downloads">-</span></p>
 			</div>
 
 			<div class="conteudo-direita">
 				<h3>Edições recentes</h3>
 				<br>
-				<p>Vol.6, N° 3 (2025)</p>
-				<p><small>Setembro - Novembro</small></p>
-
-				<p>Vol.6, N° 2 (2025)</p>
-				<p><small>Junho - Agosto</small></p>
-
-				<p>Vol.6, N° 1 (2025)</p>
-				<p><small>Março - Maio</small></p>
+				<div id="edicoes-recentes">
+					<!-- JS pode inserir aqui futuramente-->
+				</div>
 			</div>
 		</aside>
 	</main>
