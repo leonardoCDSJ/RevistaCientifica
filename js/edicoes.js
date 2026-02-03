@@ -2,6 +2,7 @@ fetch("dados/edicoes.json")
 	.then(response => response.json())
 	.then(edicoes => {
 		const container = document.getElementById("lista-edicoes");
+		if(!container) return;
 		
 		edicoes.forEach(ed => {
 			container.innerHTML += `

@@ -8,6 +8,6 @@ btn.addEventListener("click", () => {
 
 links.forEach(link => {
 	link.addEventListener("click", () => {
-		nav.classList.remove("active");
+		nav.classList.remove("open");
 	});
 });
